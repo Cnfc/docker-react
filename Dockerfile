@@ -1,4 +1,4 @@
-FROM node:alpine as builder 
+FROM node:alpine  
 # 1 ==== builder app
 
 WORKDIR '/app'
@@ -7,19 +7,20 @@ WORKDIR '/app'
 COPY package.json .
 # cope sourse code without re-render
 
-RUN yarn install
+RUN npm install
 # npm install
 
 COPY . .
 # cope sourse code
 
-RUN yarn build
+RUN npm run build
 # npm build prod version
 
 
 FROM nginx
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=0 /app/build /usr/share/nginx/html
 # 2 ====  copy from another fase Default command
 
 # CMD ["npm", "run", "build"]
 # commands
+
