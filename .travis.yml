@@ -1,4 +1,3 @@
-language: node_js
 services:
   - docker
 
@@ -6,4 +5,4 @@ before_install:
   - docker build -t stanislavdashkov/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run stanislavdashkov/docker-react npm run test -- --coverage
+  - docker run stanislavdashkov/docker-react yarn test -- --coverage
