@@ -17,7 +17,7 @@ function App() {
 
   console.log(show, LLL);
   return (
-    <div style={{ display: flex, flexDirection: column }}>
+    <div style={{ display: "flex", flexDirection: "column" }}>
       Init message
       <button onClick={handleClick}>Click me tot show!</button>
       {show && <button>ITQS</button>}
