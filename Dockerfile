@@ -7,13 +7,13 @@ WORKDIR '/app'
 COPY package.json .
 # cope sourse code without re-render
 
-RUN npm install
+RUN yarn install
 # npm install
 
 COPY . .
 # cope sourse code
 
-RUN npm run build
+RUN yarn build
 # npm build prod version
 
 
