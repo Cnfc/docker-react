@@ -4,7 +4,7 @@ FROM node:alpine
 WORKDIR '/app'
 #working directory on ubuntu/usr/app
 
-COPY package.json .
+COPY package.json ./
 # cope sourse code without re-render
 
 RUN npm install
