@@ -22,6 +22,7 @@ function App() {
       <button onClick={handleClick}>Click me tot show!</button>
       {show && <button>ITQS</button>}
       {LLL > 1 && <div>Some words</div>}
+      <p>learn react</p>
     </div>
   );
 }
