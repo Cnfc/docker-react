@@ -18,7 +18,7 @@ const Container = styled.div`
 function App() {
   return (
     <>
-      <div>MAIN</div>
+      <div>learn react</div>
       <Container>Fab Calculator</Container>
       {/* <Form></Form>
       <Indicated></Indicated>
